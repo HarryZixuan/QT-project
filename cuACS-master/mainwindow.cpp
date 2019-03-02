@@ -1,23 +1,24 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "maincontrol.h"""
+#include "maincontrol.h"
 
 MainWindow::MainWindow(MainControl &control, QWidget *parent) :
     QMainWindow(parent), _control(control),
-    _ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow)
 {
-    _ui->setupUi(this);
+    ui->setupUi(this);
 }
 
 MainWindow::~MainWindow()
 {
-    //delete ui;
+    delete ui;
 }
 
-void MainWindow::on_stuffButton_clicked(){
-    _control.displayStuffWindow();
+void MainWindow::on_StaffButton_clicked(){
+    _control.displayStaffWindow();
 }
 
-void MainWindow::on_clinetButton_clicked(){
-    //D1 do nothing
+void MainWindow::on_clientButton_clicked(){
+    _control.displayClientWindow();
+
 }

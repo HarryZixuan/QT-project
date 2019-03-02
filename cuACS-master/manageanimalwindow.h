@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <memory>
+#include "databasecontrol.h"
 
 class ManageAnimalControl;
 
@@ -17,10 +18,29 @@ class ManageAnimalWindow : public QDialog
 public:
     explicit ManageAnimalWindow(ManageAnimalControl &control ,QWidget *parent = 0);
     ~ManageAnimalWindow();
+    void hideSubmitButton();
+
+private slots:
+
+    void on_id_textEdited(const QString &arg1);
+
+    void on_name_textEdited(const QString &arg1);
+
+    void on_type_textEdited(const QString &arg1);
+
+    void on_submitButton_clicked();
+
+public slots:
+    void updateTextEditFromDB(int col);
 
 private:
     ManageAnimalControl &_control;
-    std::unique_ptr<Ui::ManageAnimalWindow> ui;
+
+    Ui:: ManageAnimalWindow *ui;
+    int _id;
+    QString _name;
+    QString _type;
+//    std::unique_ptr<Ui::ManageAnimalWindow> ui;
 };
 
 #endif // MANAGEANIMALWINDOW_H

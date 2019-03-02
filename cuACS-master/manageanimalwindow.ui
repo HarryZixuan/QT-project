@@ -13,131 +13,172 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>920</x>
-     <y>590</y>
-     <width>181</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>20</y>
      <width>331</width>
-     <height>306</height>
+     <height>337</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout">
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>name</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>type</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="lineEdit_2"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>age</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="lineEdit_3"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>gender</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>color</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="lineEdit_5"/>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>tweight</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
-     <widget class="QLineEdit" name="lineEdit_6"/>
-    </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>height</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="1">
-     <widget class="QLineEdit" name="lineEdit_7"/>
-    </item>
-    <item row="8" column="0">
-     <widget class="QLabel" name="label_8">
-      <property name="text">
-       <string>operation</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="0">
-     <widget class="QLabel" name="label_9">
-      <property name="text">
-       <string>vaccine</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="1">
-     <widget class="QComboBox" name="comboBox_2"/>
-    </item>
-    <item row="8" column="1">
-     <widget class="QComboBox" name="comboBox_3"/>
-    </item>
-    <item row="4" column="1">
-     <widget class="QComboBox" name="comboBox_4"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_24">
-      <property name="text">
        <string>ID</string>
       </property>
      </widget>
     </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="id"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_24">
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="1">
-     <widget class="QLineEdit" name="ID"/>
+     <widget class="QLineEdit" name="name"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="typeLabel">
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="type"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Age</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEdit_3"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Gender</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="comboBox_4">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Female</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Male</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>PrimaryColor</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineEdit_5"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Weight</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="lineEdit_6"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Height</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineEdit_7"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>spayed</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QComboBox" name="comboBox_3"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>Vaccine</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QComboBox" name="comboBox_2">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1 time</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2 times</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 times</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Up to date</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>No need</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>breed</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEdit"/>
     </item>
    </layout>
   </widget>
@@ -147,7 +188,7 @@
      <x>790</x>
      <y>30</y>
      <width>301</width>
-     <height>181</height>
+     <height>241</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -162,198 +203,325 @@
      <x>359</x>
      <y>19</y>
      <width>371</width>
-     <height>399</height>
+     <height>551</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout_2">
     <item row="0" column="0">
      <widget class="QLabel" name="label_10">
       <property name="text">
-       <string>aggressiveness</string>
+       <string>Aggressiveness</string>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QComboBox" name="comboBox"/>
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Week</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Medium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>High</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label_11">
+     <widget class="QLabel" name="label_12">
       <property name="text">
-       <string>intake date</string>
+       <string>Trained</string>
       </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="comboBox_5">
+      <item>
+       <property name="text">
+        <string>Never</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Excellent</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>well</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>medium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>never</string>
+       </property>
+      </item>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_12">
+     <widget class="QLabel" name="label_13">
       <property name="text">
-       <string>trained</string>
+       <string>Personality</string>
       </property>
      </widget>
     </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_9"/>
+    </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_13">
+     <widget class="QLabel" name="label_14">
       <property name="text">
-       <string>persionality</string>
+       <string>Feeding Difficulty</string>
       </property>
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_14">
+     <widget class="QLabel" name="label_15">
       <property name="text">
-       <string>number</string>
+       <string>Food Preference</string>
       </property>
      </widget>
     </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="label_15">
-      <property name="text">
-       <string>food</string>
-      </property>
-     </widget>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEdit_11"/>
     </item>
     <item row="6" column="0">
      <widget class="QLabel" name="label_16">
       <property name="text">
-       <string>source</string>
+       <string>Source</string>
       </property>
      </widget>
     </item>
     <item row="7" column="0">
      <widget class="QLabel" name="label_17">
       <property name="text">
-       <string>reason</string>
+       <string>Activity Level</string>
       </property>
      </widget>
     </item>
-    <item row="8" column="0">
+    <item row="5" column="0">
      <widget class="QLabel" name="label_18">
       <property name="text">
-       <string>hobby</string>
+       <string>appetite level</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineEdit_15"/>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="lineEdit_17"/>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="lineEdit_8"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>Speciality</string>
       </property>
      </widget>
     </item>
     <item row="9" column="0">
-     <widget class="QLabel" name="label_19">
+     <widget class="QLabel" name="label_20">
       <property name="text">
-       <string>specoally</string>
+       <string>Learning Speed</string>
       </property>
      </widget>
     </item>
     <item row="10" column="0">
-     <widget class="QLabel" name="label_20">
+     <widget class="QLabel" name="label_21">
       <property name="text">
-       <string>learning speed</string>
+       <string>Environment of Living</string>
       </property>
      </widget>
     </item>
     <item row="11" column="0">
-     <widget class="QLabel" name="label_21">
-      <property name="text">
-       <string>environment of living</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit_4"/>
-    </item>
-    <item row="2" column="1">
-     <widget class="QComboBox" name="comboBox_5"/>
-    </item>
-    <item row="12" column="0">
      <widget class="QLabel" name="label_22">
       <property name="text">
-       <string>price</string>
+       <string>Adoption Price</string>
       </property>
      </widget>
     </item>
-    <item row="12" column="1">
-     <widget class="QLineEdit" name="lineEdit_8"/>
-    </item>
     <item row="3" column="1">
-     <widget class="QLineEdit" name="lineEdit_9"/>
-    </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="lineEdit_10"/>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="lineEdit_11"/>
+     <widget class="QComboBox" name="comboBox_6">
+      <item>
+       <property name="text">
+        <string>unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>difficult</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>meddle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>easy</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="6" column="1">
-     <widget class="QLineEdit" name="lineEdit_12"/>
+     <widget class="QComboBox" name="comboBox_7">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Abandoned</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Born in here</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wandered</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="7" column="1">
-     <widget class="QLineEdit" name="lineEdit_13"/>
-    </item>
-    <item row="8" column="1">
-     <widget class="QLineEdit" name="lineEdit_14"/>
+     <widget class="QComboBox" name="comboBox_8">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>High</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Medium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Low</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Zero</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="9" column="1">
-     <widget class="QLineEdit" name="lineEdit_15"/>
+     <widget class="QComboBox" name="comboBox_9">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fast</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Medium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Slow</string>
+       </property>
+      </item>
+     </widget>
     </item>
-    <item row="10" column="1">
-     <widget class="QLineEdit" name="lineEdit_16"/>
-    </item>
-    <item row="11" column="1">
-     <widget class="QLineEdit" name="lineEdit_17"/>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="comboBox_10">
+      <item>
+       <property name="text">
+        <string>Unknown</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>High</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Medium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Low</string>
+       </property>
+      </item>
+     </widget>
     </item>
    </layout>
   </widget>
   <widget class="QWidget" name="formLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>329</y>
+     <x>10</x>
+     <y>360</y>
      <width>331</width>
-     <height>291</height>
+     <height>221</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout_3">
-    <item row="0" column="0">
+    <item row="0" column="1">
      <widget class="QLabel" name="label_23">
       <property name="text">
-       <string>comments</string>
+       <string>                               Comments</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
+    <item row="1" column="1">
      <widget class="QTextEdit" name="textEdit"/>
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="submitButton">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>590</y>
+     <width>83</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>ManageAnimalWindow</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>ManageAnimalWindow</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

@@ -3,7 +3,7 @@
 # Project created by QtCreator 2019-01-27T20:57:27
 #
 #-------------------------------------------------
-
+QT       += core sql
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -24,32 +24,45 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-    animalprofile.cpp \
-    animals.cpp \
     client.cpp \
     main.cpp \
     mainwindow.cpp \
     maincontrol.cpp \
-    stuffwindow.cpp \
-    stuffcontrol.cpp \
+    staffwindow.cpp \
+    staffcontrol.cpp \
     manageanimalwindow.cpp \
-    manageanimalcontrol.cpp
+    manageanimalcontrol.cpp \
+    animal.cpp \
+    database.cpp \
+    databasecontrol.cpp \
+    manageclientwindow.cpp \
+    manageclientcontrol.cpp \
+    clientwindow.cpp \
+    clientcontrol.cpp
 
 HEADERS += \
-    animalprofile.h \
-    animals.h \
     mainwindow.h \
     client.h \
     maincontrol.h \
-    stuffwindow.h \
-    stuffcontrol.h \
+    staffwindow.h \
+    staffcontrol.h \
     storgePtrCollection.h \
     manageanimalwindow.h \
-    manageanimalcontrol.h
+    manageanimalcontrol.h \
+    animal.h \
+    database.h \
+    databasecontrol.h \
+    manageclientwindow.h \
+    manageclientcontrol.h \
+    clientwindow.h \
+    clientcontrol.h
 
 
 FORMS += \
         mainwindow.ui \
-    stuffwindow.ui \
-    manageanimalwindow.ui
+    Staffwindow.ui \
+    manageanimalwindow.ui \
+    animalviewwindow.ui \
+    manageclientwindow.ui \
+    clientwindow.ui
 
